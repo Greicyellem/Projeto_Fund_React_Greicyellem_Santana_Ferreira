@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: #e2a79e;
+  background-size: cover;
+  height: 100%;
+
+}
+
+.forms {
+  display: flex;
+  padding: 10px;  
+}
+
+
+.app {
+ max-width: 750px;
+ margin: 20px auto 20px;
+ background-color: #e9d3d3;
+ padding: 10px 20px;
+ border-radius: 10px;
+ opacity: 0.95;
+
+} 
+
+
+.todo-list {
+  margin-bottom: 20px; 
+  padding-bottom: 20px;
+  margin-top: 10px;
+  padding-top: 20px ;
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+
+}
+
+.todo {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(190, 55, 14, 0.5);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.complete {
+  /* background-color: #e9d3d3; */
+  border-radius: 40%;
+  margin-right: 10px;
+  padding: 5px 5px;
+  padding: 10px 10px;
+  
+
+  
+}
+
+.remove {
+  /* background-color: #e9d3d3; */
+  border-radius: 40%;
+  padding: 10px 10px;
+  margin-right: 8px;
+  margin-top: 5px 5px;
+
+}
+
+.complete:hover {
+  background-color: #c39090;
+  transform: scale(1.5);
+
+
+}
+
+.remove:hover {
+  background-color: #c2341e;
+  transform: scale(1.5);
+
+
+}
+
+
+.todo-form {
+  padding-bottom: 24px;
+  margin: 20px 20px;
+  text-align: -webkit-center;
+}
+
+
+input, select {
+  border: 1px solid #c39090;
+  border-radius: 8px;
+  width: 80%;
+  justify-content: center;
+}
+
+
+
+
